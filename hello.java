@@ -1,4 +1,4 @@
-package q;
+
 
 
 // // public class Main {
@@ -619,12 +619,12 @@ class hello{
             print(arr);
             return;
         }
+        // https://github.com/Rupesh155
         for(int col=0;col<N;col++){
             if(isSafe(arr,row,col)){
                 arr[row][col]='Q';
                 solve(arr, row+1);
-                arr[row][col]='.';
-                
+                arr[row][col]='.';   
             }
         }
 
